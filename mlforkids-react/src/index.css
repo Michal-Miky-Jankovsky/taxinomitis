@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('fonts/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
+    url('fonts/quicksand-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    @apply text-text-primary;
+    font-family:
+        /*'quicksandlight',*/
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* typography */
+
+h1 {
+    @apply
+    text-4xl font-bold
+    py-6;
+}
+
+h2 {
+    @apply
+    text-2xl font-bold
+    py-6;
+}
+
+p {
+    @apply py-2;
+}
+
+a {
+    @apply underline;
+}
+
+a:hover {
+    @apply no-underline;
+}
+
+/* responsive design - responsive design - responsive design - responsive design */
+
+/* fixed width columns separated by first child */
+.cols-2-fixed {
+    @apply md:grid md:grid-cols-2 md:gap-4;
+}
+
+.cols-3-fixed {
+    @apply md:grid md:grid-cols-3 md:gap-4;
+}
+
+.cols-4-fixed {
+    @apply md:grid md:grid-cols-4 md:gap-4;
+}
+
+/* even distribution of columns */
+.cols-2-even {
+    @apply md:columns-2
 }

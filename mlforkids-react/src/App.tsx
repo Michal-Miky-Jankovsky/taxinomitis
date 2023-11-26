@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import CreateProject from './pages/CreateProject';
+import Models from './pages/Models';
+import Textbook from './pages/Textbook';
+import FAQ from './pages/FAQ';
+import Footer from "./components/Footer";
+import NavigationBar from "./components/NavigationBar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// ... import other page components
+
+const App = () => {
+    return (
+    <Router>
+        <NavigationBar/>
+        <Routes>
+            <Route path="/" element={ <Home/> }/>
+            <Route path="/about" element={ <About/> }/>
+            <Route path="/create-project" element={ <CreateProject/> }/>
+            <Route path="/models" element={ <Models/> }/>
+            <Route path="/textbook" element={ <Textbook/> }/>
+            <Route path="/faq" element={ <FAQ/> }/>
+        </Routes>
+        <Footer/>
+    </Router>
+)
+    ;
+};
 
 export default App;

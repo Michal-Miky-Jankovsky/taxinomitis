@@ -1,0 +1,82 @@
+{
+  "NavigationBar": {
+    "home": "Úvodní stránka",
+    "about": "O nástroji",
+    "createProject": "Vytvoř projekt",
+    "models": "Modely",
+    "textbook": "Učebnice",
+    "faq": "FAQ",
+    "letsStart": "Jdu na to!"
+  },
+  "Footer": {
+    "header": "Strojové učení pro děti\nDale Lane",
+    "p1": "Stránky <a href=\"machineleatningforkids.co.uk\">machineleatningforkids.co.uk</a>\nOriginál učebnice <a href=\"https://machinelearningforkids.co.uk/#!/book\">Machine Learning for Kids</a>\nStránky autora nástroje <a href=\"https://dalelane.co.uk/\">dalelane.co.uk</a>",
+    "p2": "Úvodní stránka\nO Strojovém učení pro děti\nUčebnice Strojové učení pro děti\nProjekty",
+    "p3": "Autory české verze jsou: Michal Miky Jankovský, Eva Nečasová a Honza Louda.\nDěkujeme za podporu společnosti IBM Czech!\nKontaktuje nás: <a href=\"https://aidetem.cz\">AI dětem</a>"
+  },
+  "Home": {
+    "h1": "Nauč (se) umělou inteligenci!",
+    "section1": {
+      "p1": "Strojové učení pro děti je nástroj, díky němuž\nse může každý jednoduše naučit pracovat\ns umělou inteligencí.",
+      "p2": "Nemusíš ani umět programovat! Natrénuj si jednoduše svůj\nmodel strojového učení a vytvoř třeba hru ve Scratchi.",
+      "button": "Jdu na to!"
+    },
+    "section2": {
+      "h2": "Jak se to dělá?",
+      "col1": "Nejprve připrav pro počítač příklady a rozděl je tříd.",
+      "col2": "Natrénuj svůj model — text, čísla, audio nebo obrázky.",
+      "col3": "Využij ho ve Scratchi a vytvoř zábavnou hru pro kamarády."
+    },
+    "section3": {
+      "h2": "Co to je Strojové učení pro děti",
+      "p": "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít.",
+      "button": "Jde se na to!"
+    },
+    "section4": {
+      "h2": "Co můžeme umělou inteligenci naučit?",
+      "col1": "Rozpoznávat náladu z textu, být hlasový\nasistent",
+      "col2": "Hrát piškvorky nebo třeba Pacmana",
+      "col3": "Rozpoznávat kresby, fotky, grafiku a podobně",
+      "col4": "Rozpoznávat zvuky, hudbu a další audio"
+    },
+    "section5": {
+      "h2": "Učebnice Strojové učení pro děti",
+      "p": "Projektově založená učebnice umělé inteligence pro děti. Najdete v ní 13 projektů, které jsou popsány krok za krokem. Prohlédněte si ji zde.",
+      "button": "Objednat",
+      "link": "https://obchod.aidetem.cz"
+    },
+    "section6": {
+      "h2": "Projekty",
+      "col1": "Vytvoř aplikaci, která rozpoznává Pokémona",
+      "col2": "Vytvoř pro kamarády apku, která rozpozná jak se cítí",
+      "col3": "Nauč umělou inteligenci hrát Pacmana",
+      "button": "Další projekty"
+    }
+  },
+  "About": {
+    "h1": "Strojové učení pro děti",
+    "section1": {
+      "h2": "Co je to Strojové učení pro děti?",
+      "p1": "Strojové učení pro děti je nástroj, díky němuž se může každý jednoduše naučit pracovat s umělou inteligencí."
+    },
+    "section2": {
+      "h2": "Krátké intro v 20 sekundách/ 20 minutách",
+      "alt1": "Video ukazující práci ve scratchi",
+      "alt2": "Video..."
+    },
+    "section3": {
+      "h2": "Co to je?",
+      "p": "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít.",
+      "button": "Jde se na to!"
+    },
+    "section4": {
+      "h2": "Proč?",
+      "col1": "Rozpoznávat náladu z textu, být hlasový\nasistent",
+      "col2": "Hrát piškvorky nebo třeba Pacmana",
+      "col3": "Rozpoznávat kresby, fotky, grafiku a podobně,"
+    },
+    "todo": {
+      "WHAT.storiesButton": "EN - Stories"
+    }
+  }
+}

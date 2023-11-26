@@ -32,7 +32,7 @@
         "IN6SECS": "Za 6 sekund...",
         "IN20MINS": "Za 20 minut...",
         "WHAT": {
-            "TITLE": "Co?",
+            "TITLE": "Co to je?",
             "BODY": "Tento bezplatný nástroj představuje strojové učení tím, že poskytuje praktické zkušenosti s trénováním systémů strojového učení a vytvářením věcí s jejich pomocí. <br/><br/>Poskytuje snadno použitelné prostředí s průvodcem pro trénování modelů strojového učení k rozpoznávání textu, čísel, obrázků nebo zvuků. <br/><br/>Navazuje na dosavadní snahy o představení a výuku programování pro děti tím, že tyto modely přidává do výukových kódovacích platforem <a href='https://scratch.mit.edu/about' target='_blank'>Scratch</a> a <a href='http://appinventor.mit.edu/' target='_blank'>App Inventor</a> a pomáhá dětem vytvářet projekty a stavět hry s modely strojového učení, které trénují. <br/><br/>Nástroj byl poprvé zpřístupněn v roce 2017 a nyní jej <a href='https://wakelet.com/wake/4d3680cb-2a11-49ab-9180-fcfeced48393' target='_blank'>využívají tisíce škol, kódovacích klubů a rodin po celém světě</a>. <br/><br/>Chcete-li se dozvědět více, podívejte se na:"
         },
         "WHY": {
@@ -40,7 +40,7 @@
             "BODY": "Strojové učení je všude kolem nás. Všichni denně používáme systémy strojového učení - například spamové filtry, doporučovací systémy, služby jazykového překladu, chatboty a digitální asistenty, vyhledávače a systémy pro odhalování podvodů.<br/><br/>Brzy bude běžné, že systémy strojového učení budou řídit naše auta a pomáhat lékařům diagnostikovat a léčit naše nemoci. <br/><br/>Je důležité, aby si děti uvědomovaly, jak náš svět funguje. Nejlepším způsobem, jak porozumět možnostem a důsledkům, je mít možnost si s touto technologií samy tvořit. <br/><br/>Chcete-li se dozvědět více, přečtěte si článek: <a target='_blank' class='btn btn-primary' href='http://dalelane.co.uk/blog/?p=3513'>\"Představujeme strojové učení dětem\"</a>"
         },
         "TECH": {
-            "TITLE": "Technologie",
+            "TITLE": "Tech",
             "BODY": "Nástroj je zcela webový a nevyžaduje žádné instalace ani složité nastavení, abyste jej mohli používat. <br/><br/>Byl navržen pro použití ve třídách školami a dobrovolníky vedenými skupinami kódování pro děti a poskytuje stránku pro správce, aby učitelé nebo vedoucí skupin mohli spravovat a administrovat přístup pro své studenty.<br/><br/>Vytváří jej <a target='_blank' href='http://dalelane.co.uk/'>Dale Lane</a> s využitím rozhraní API od <a target='_blank' href='https://www.ibm.com/watson/developer/'>IBM Watson</a>.<br/><br/>Další podrobnosti o implementaci najdete ve <a target='_blank' href='https://github.com/IBM/taxinomitis/'>zdrojovém kódu na GitHubu</a> nebo si můžete přečíst některé <a target='_blank' href='http://dalelane.co.uk/blog/?tag=mlforkids-tech'>blogové příspěvky o této technologii</a>. ",
             "LOGIN": "Jak začít: "
         },
@@ -1747,7 +1747,7 @@
             "Q4-A-4": "projekty <strong>obrázků</strong> lze trénovat pouze na počítači."
         },
         "SCRATCH": {
-            "TITLE": "Problémy se Scratchem",
+            "TITLE": "Problémy s poškrábáním",
             "Q1": "Nevím, jak zprovoznit Scratch 2",
             "Q1-A-1": "Starší verze programu Scratch, Scratch 2, potřebuje ke své práci Adobe Flash, takže musíte používat operační systém a webový prohlížeč, který umí pracovat s Flashem.",
             "Q1-A-2": "Pokud si nejste jisti, jak povolit Flash, můžete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/machinelearningforkids-scratchx.pdf'>si stáhnout dokument s několika tipy pro zprovoznění aplikace Scratch</a>. Nebo můžete místo toho použít novou verzi programu Scratch, Scratch 3.",

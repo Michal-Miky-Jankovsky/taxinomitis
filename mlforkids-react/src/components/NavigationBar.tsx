@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import Logo from "./svg/Logo";
 import { RedButton } from "./RedButton";
 
 const NavigationBar = () => {
+    const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState(false);
     const { t } = useTranslation('translation', { keyPrefix: 'NavigationBar' });
+
+    const linkHomeClassNameFn = ({ isActive }: { isActive: boolean }) =>
+        "text-xl font-semibold " +
+        "no-underline hover:underline";
 
     const linkClassNameFn = ({ isActive }: { isActive: boolean }) =>
         (isActive ? 'text-menu-active cursor-default hover:no-underline ' : 'text-menu hover:text-menu-hover ') +
@@ -16,16 +21,27 @@ const NavigationBar = () => {
         <nav
             id="NavigationBar"
             className={
-                "navigation-bar " +
                 "bg-brand-white " +
                 "shadow-lg sticky top-0 z-50 " +
                 "p-4"
             }>
-            <ul className={ "flex flex-wrap justify-between items-center" }>
+
+            <button
+                className="md:hidden p-2"
+                onClick={ () => setIsMobileMenuOpen(!isMobileMenuOpen) }
+            >
+                <span>☰</span> {/* Hamburger Icon */ }
+            </button>
+
+            <ul className={
+                (isMobileMenuOpen ? 'block' : 'hidden') +
+                ' md:flex ' +
+                'flex-wrap justify-between items-center'
+            }>
                 <li className={ "p-2" }>
                     <NavLink to="/" className={ linkClassNameFn } end>
                         <Logo title={ t('home') }/>
-                        <span className={"md:hidden"}>{ t('home') }</span>
+                        <span className={ "md:hidden" }>{ t('home') }</span>
                     </NavLink>
                 </li>
                 <li className={ "p-2" }>

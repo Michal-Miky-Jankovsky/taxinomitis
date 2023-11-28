@@ -40,7 +40,7 @@
             "BODY": "Strojové učení je všude kolem nás. Všichni denně používáme systémy strojového učení - například spamové filtry, doporučovací systémy, služby jazykového překladu, chatboty a digitální asistenty, vyhledávače a systémy pro odhalování podvodů.<br/><br/>Brzy bude běžné, že systémy strojového učení budou řídit naše auta a pomáhat lékařům diagnostikovat a léčit naše nemoci. <br/><br/>Je důležité, aby si děti uvědomovaly, jak náš svět funguje. Nejlepším způsobem, jak porozumět možnostem a důsledkům, je mít možnost si s touto technologií samy tvořit. <br/><br/>Chcete-li se dozvědět více, přečtěte si článek: <a target='_blank' class='btn btn-primary' href='http://dalelane.co.uk/blog/?p=3513'>\"Představujeme strojové učení dětem\"</a>"
         },
         "TECH": {
-            "TITLE": "Tech",
+            "TITLE": "Technologie",
             "BODY": "Nástroj je zcela webový a nevyžaduje žádné instalace ani složité nastavení, abyste jej mohli používat. <br/><br/>Byl navržen pro použití ve třídách školami a dobrovolníky vedenými skupinami kódování pro děti a poskytuje stránku pro správce, aby učitelé nebo vedoucí skupin mohli spravovat a administrovat přístup pro své studenty.<br/><br/>Vytváří jej <a target='_blank' href='http://dalelane.co.uk/'>Dale Lane</a> s využitím rozhraní API od <a target='_blank' href='https://www.ibm.com/watson/developer/'>IBM Watson</a>.<br/><br/>Další podrobnosti o implementaci najdete ve <a target='_blank' href='https://github.com/IBM/taxinomitis/'>zdrojovém kódu na GitHubu</a> nebo si můžete přečíst některé <a target='_blank' href='http://dalelane.co.uk/blog/?tag=mlforkids-tech'>blogové příspěvky o této technologii</a>. ",
             "LOGIN": "Jak začít: "
         },

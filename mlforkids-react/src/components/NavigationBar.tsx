@@ -8,10 +8,6 @@ const NavigationBar = () => {
     const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState(false);
     const { t } = useTranslation('translation', { keyPrefix: 'NavigationBar' });
 
-    const linkHomeClassNameFn = ({ isActive }: { isActive: boolean }) =>
-        "text-xl font-semibold " +
-        "no-underline hover:underline";
-
     const linkClassNameFn = ({ isActive }: { isActive: boolean }) =>
         (isActive ? 'text-menu-active cursor-default hover:no-underline ' : 'text-menu hover:text-menu-hover ') +
         "text-xl font-semibold " +
@@ -20,27 +16,26 @@ const NavigationBar = () => {
     return (
         <nav
             id="NavigationBar"
-            className={
-                "bg-brand-white " +
-                "shadow-lg sticky top-0 z-50 " +
-                "p-4"
-            }>
+            className={ "sticky top-0 z-50" }>
 
             <button
-                className="md:hidden p-2"
+                className="md:hidden p-6 absolute top-2 right-2 bg-hamburger-background"
                 onClick={ () => setIsMobileMenuOpen(!isMobileMenuOpen) }
             >
-                <span>☰</span> {/* Hamburger Icon */ }
+                <span className={ isMobileMenuOpen ? "hidden" : "block" }>☰ MENU</span> {/* Hamburger Icon */ }
+                <span className={ isMobileMenuOpen ? "block" : "hidden" }>X</span> {/* Close menu */ }
             </button>
 
             <ul className={
-                (isMobileMenuOpen ? 'block' : 'hidden') +
-                ' md:flex ' +
-                'flex-wrap justify-between items-center'
+                (isMobileMenuOpen ? 'block ' : 'hidden ') +
+                'md:flex ' +
+                'flex-wrap justify-between items-center ' +
+                'bg-brand-white shadow-lg ' +
+                'p-4'
             }>
                 <li className={ "p-2" }>
                     <NavLink to="/" className={ linkClassNameFn } end>
-                        <Logo title={ t('home') }/>
+                        <Logo className={ "hidden md:block" } title={ t('home') }/>
                         <span className={ "md:hidden" }>{ t('home') }</span>
                     </NavLink>
                 </li>

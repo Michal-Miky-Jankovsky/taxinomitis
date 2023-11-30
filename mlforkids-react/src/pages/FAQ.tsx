@@ -1,19 +1,10 @@
 import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
-import React, { useEffect } from "react";
 import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
-
-import { Collapse, initTE } from 'tw-elements';
-
-initTE({ Collapse });
 
 const FAQ = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Models' });
     const { t: tPrev } = useTranslation('prev', { keyPrefix: 'HELP' });
-
-    useEffect(() => {
-        initTE({ Collapse });
-    }, []);
 
     return (
         <div className="page models">

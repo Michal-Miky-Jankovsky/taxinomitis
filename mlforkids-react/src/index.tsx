@@ -4,12 +4,6 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 import './i18n';
-// In your main JavaScript file, like index.js or App.js
-import 'tw-elements';
-
-import { Collapse, initTE } from 'tw-elements';
-
-initTE({ Collapse });
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

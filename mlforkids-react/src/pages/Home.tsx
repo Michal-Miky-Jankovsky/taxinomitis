@@ -10,24 +10,34 @@ const Home = () => {
         <header>
             <Section className={ "bg-brand-orange" }>
                 <h1 className={ "text-white" }>{ t('h1') }</h1>
-                <p className={ "text-2xl" }>{ t('section1.p1') }</p>
-                <p className={ "" }>{ t('section1.p2') }</p>
-                <RedButton newTab href="#">
-                    { t('section1.button') }
-                </RedButton>
+                <div className={ "cols-2-fixed" }>
+                    <div>
+                        <p className={ "text-2xl" }>{ t('section1.p1') }</p>
+                        <p className={ "" }>{ t('section1.p2') }</p>
+                        <RedButton newTab href="#">
+                            { t('section1.button') }
+                        </RedButton>
+                    </div>
+                    <div className={ "hidden md:block" }>
+                        todo svg
+                    </div>
+                </div>
             </Section>
         </header>
         <main>
             <Section className={ "" }>
                 <h2 className={ "" }>{ t('section2.h2') }</h2>
-                <div className="columns-3">
+                <div className="cols-3-fixed">
                     <div className="">
+                        todo svg
                         <p className="">{ t('section2.col1') }</p>
                     </div>
                     <div className="">
+                        todo svg
                         <p className="">{ t('section2.col3') }</p>
                     </div>
                     <div className="">
+                        todo svg
                         <p className="">{ t('section2.col3') }</p>
                     </div>
                 </div>
@@ -44,9 +54,8 @@ const Home = () => {
                 </RedButton>
             </Section>
             <Section className={ "" }>
-                {/*h2, col 1,2,3,4*/ }
                 <h2 className={ "" }>{ t('section4.h2') }</h2>
-                <div className="columns-4">
+                <div className="cols-4-fixed">
                     <div className="">
                         <p className="">{ t('section4.col1') }</p>
                     </div>
@@ -63,16 +72,23 @@ const Home = () => {
             </Section>
             <Section className={ "bg-brand-orange" }>
                 <h2 className={ "" }>{ t('section5.h2') }</h2>
-                <SafeHtmlParagraph className={ "" }>
-                    { t('section5.p') }
-                </SafeHtmlParagraph>
-                <RedButton newTab marginTop href={ t('section5.link') }>
-                    { t('section5.button') }
-                </RedButton>
+                <div className="cols-2-fixed">
+                    <div className="">
+                        <SafeHtmlParagraph className={ "" }>
+                            { t('section5.p') }
+                        </SafeHtmlParagraph>
+                        <RedButton newTab marginTop href={ t('section5.link') }>
+                            { t('section5.button') }
+                        </RedButton>
+                    </div>
+                    <div className="">
+                        todo svg
+                    </div>
+                </div>
             </Section>
             <Section className={ "" }>
                 <h2 className={ "" }>{ t('section6.h2') }</h2>
-                <div className="columns-3">
+                <div className="cols-3-fixed">
                     <div className="">
                         <p className="">{ t('section6.col1') }</p>
                     </div>

@@ -56,7 +56,6 @@
   "About": {
     "h1": "Strojové učení pro děti",
     "section1": {
-      "h2": "Co je to Strojové učení pro děti?",
       "p1": "Strojové učení pro děti je nástroj, díky němuž se může každý jednoduše naučit pracovat s umělou inteligencí."
     },
     "section2": {
@@ -77,6 +76,17 @@
     },
     "todo": {
       "WHAT.storiesButton": "EN - Stories"
+    }
+  },
+  "Textbook": {
+    "h1": "Machine Learning for Kids",
+    "section1": {
+      "p1": "Úvod do umělé inteligence na základě projektů"
+    },
+    "section2": {
+      "p1": "Kniha je praktickým úvodem do toho, jak umělá inteligence ovlivňuje náš život. Obsahuje návody krok za krokem na tvorbu různých projektů využívajících strojové učení v jazyce Scratch a vysvětluje, jak každý z nich souvisí s reálnými aplikacemi umělé inteligence.",
+      "p2": "Několik projektů se hlouběji zabývá konkrétními aspekty aplikace strojového učení, včetně obnovení některých nejčastějších chyb, kterých se v umělé inteligenci dopouštíme, a seznámení se s různými způsoby, jakými lze měřit a popisovat výkonnost systémů strojového učení.",
+      "p3": "V závěru knihy jsou uvedeny příklady neobjektivních systémů strojového učení a diskutovány otázky etiky umělé inteligence, které z nich vyplývají."
     }
   }
 }

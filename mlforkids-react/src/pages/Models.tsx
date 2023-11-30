@@ -11,10 +11,17 @@ const Models = () => {
         <div className="page models">
             <header>
                 <Section className={ "bg-brand-orange" }>
-                    <h1 className={ "text-white" }>{ tPrev('TITLE') }</h1>
-                    <p className={ "text-2xl" }>{ tPrev('INTRO_1') }</p>
-                    <p className={ "" }>{ tPrev('INTRO_2') }</p>
-                    <p className={ "" }>{ tPrev('INTRO_3') }</p>
+                    <div className={ "cols-2-fixed" }>
+                        <div>
+                            <h1 className={ "text-white" }>{ tPrev('TITLE') }</h1>
+                            <p className={ "text-2xl" }>{ tPrev('INTRO_1') }</p>
+                            <p className={ "" }>{ tPrev('INTRO_2') }</p>
+                            <p className={ "" }>{ tPrev('INTRO_3') }</p>
+                        </div>
+                        <div className={ "hidden md:block" }>
+                            todo svg
+                        </div>
+                    </div>
                 </Section>
             </header>
             <main>

@@ -39,7 +39,7 @@ const About = () => {
                     <h2 className={ "text-brand-white" }>
                         { tPrev('WHAT.TITLE') }
                     </h2>
-                    <div className="md:columns-2">
+                    <div className="cols-2-even">
                         <SafeHtmlParagraph className="">
                             { tPrev('WHAT.BODY') }
                         </SafeHtmlParagraph>

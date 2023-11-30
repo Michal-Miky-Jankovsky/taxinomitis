@@ -13,7 +13,7 @@ const Section = (props: SectionProps) => {
     } = props;
 
     return (
-        <section className={`px-8 ${className}`} { ...rest }>
+        <section className={`Section px-8 ${className}`} { ...rest }>
             <div className="wrapper max-w-6xl mx-auto py-12" >
                 { children }
             </div>

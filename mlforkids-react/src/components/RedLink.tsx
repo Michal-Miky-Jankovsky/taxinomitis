@@ -1,30 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-interface RedButtonProps {
+interface RedLinkProps {
     children: React.ReactNode | string;
-    href: string;
-    newTab?: boolean;
+    to: string;
     marginTop?: boolean;
     className?: string;
     target?: string;
     rel?: string;
 }
 
-export const RedButton = (props: RedButtonProps) => {
+export const RedLink = (props: RedLinkProps) => {
     const {
         children,
-        href,
-        newTab = false,
+        to,
         marginTop = false,
         className = '',
         ...rest
     } = props;
 
-    return <a
-        href={ href }
-        target={ newTab ? '_blank' : undefined }
+    return <Link
+        to={ to }
         className={
-            "RedButton " +
+            "RedLink " +
             // reset default <a> styles
             'no-underline ' +
             // styles
@@ -42,5 +40,5 @@ export const RedButton = (props: RedButtonProps) => {
         { ...rest }
     >
         { children }
-    </a>;
+    </Link>;
 }

@@ -10,7 +10,7 @@ const Footer = () => {
     const { t: tNav } = useTranslation('translation', { keyPrefix: 'NavigationBar' });
 
     return (
-        <footer className="text-gray-600 bg-gray-100 px-4 py-6">
+        <footer id="Footer" className="text-gray-600 bg-gray-100 px-4 py-6">
             <div className="wrapper p-12">
                 <div className="mb-8">
                     <span className="inline-block align-center mr-6">

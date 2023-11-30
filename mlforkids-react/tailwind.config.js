@@ -15,7 +15,7 @@ module.exports = {
                 'menu': '#22619B',
                 'menu-hover': '#1A4C7A',
                 'menu-active': '#CE5D5B',
-                'hamburger-background': 'rgba(255,255,255, 0.3)',
+                'hamburger-background': 'rgba(128, 128, 128, 0.3)',
 
                 // button colors
                 'red-button': '#CD5C5A',

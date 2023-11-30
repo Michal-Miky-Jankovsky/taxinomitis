@@ -3,9 +3,11 @@ import { useTranslation } from 'react-i18next';
 import SafeHtmlParagraph from "./SafeHtmlParagraph";
 import SafeHtmlSpan from "./SafeHtmlSpan";
 import Logo from "./svg/Logo";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Footer' });
+    const { t: tNav } = useTranslation('translation', { keyPrefix: 'NavigationBar' });
 
     return (
         <footer className="text-gray-600 bg-gray-100 px-4 py-6">
@@ -22,7 +24,31 @@ const Footer = () => {
                 </div>
                 <div className="cols-3-fixed">
                     <SafeHtmlParagraph>{ t('p1') }</SafeHtmlParagraph>
-                    <SafeHtmlParagraph>{ t('p2') }</SafeHtmlParagraph>
+                    <p>
+                        <Link to="/">
+                            { tNav('home') }
+                        </Link>
+                        <br/>
+                        <Link to="/about">
+                            { tNav('about') }
+                        </Link>
+                        <br/>
+                        <Link to="/create-project">
+                            { tNav('createProject') }
+                        </Link>
+                        <br/>
+                        <Link to="/models">
+                            { tNav('models') }
+                        </Link>
+                        <br/>
+                        <Link to="/textbook">
+                            { tNav('textbook') }
+                        </Link>
+                        <br/>
+                        <Link to="/faq">
+                            { tNav('faq') }
+                        </Link>
+                    </p>
                     <SafeHtmlParagraph>{ t('p3') }</SafeHtmlParagraph>
                 </div>
             </div>

@@ -2,6 +2,8 @@ import Section from "../components/Section";
 import { useTranslation } from "react-i18next";
 import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
 import { RedButton } from "../components/RedButton";
+import React from "react";
+import Paragraphs from "../components/Paragraphs";
 
 const Home = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Home' });
@@ -9,13 +11,20 @@ const Home = () => {
     return <div className="page home">
         <header>
             <Section className={ "bg-brand-orange" }>
-                <h1 className={ "text-white" }>{ t('h1') }</h1>
+                <h1 className={ "text-white" }>
+                    { t('headerSection.h1') }
+                </h1>
                 <div className={ "cols-2-fixed" }>
                     <div>
-                        <p className={ "text-2xl" }>{ t('section1.p1') }</p>
-                        <p className={ "" }>{ t('section1.p2') }</p>
+                        <SafeHtmlParagraph
+                            className={ "text-2xl" }>
+                            { t('headerSection.pLarge') }
+                        </SafeHtmlParagraph>
+                        <Paragraphs>
+                            { t('headerSection.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                         <RedButton newTab href="#">
-                            { t('section1.button') }
+                            { t('headerSection.button') }
                         </RedButton>
                     </div>
                     <div className={ "hidden md:block" }>
@@ -25,34 +34,43 @@ const Home = () => {
             </Section>
         </header>
         <main>
+            {/* section 2 */}
             <Section className={ "" }>
                 <h2 className={ "" }>{ t('section2.h2') }</h2>
                 <div className="cols-3-fixed">
                     <div className="">
                         todo svg
-                        <p className="">{ t('section2.col1') }</p>
+                        <Paragraphs>
+                            { t('section2.col1.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
                         todo svg
-                        <p className="">{ t('section2.col3') }</p>
+                        <Paragraphs>
+                            { t('section2.col2.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
                         todo svg
-                        <p className="">{ t('section2.col3') }</p>
+                        <Paragraphs>
+                            { t('section2.col3.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                 </div>
             </Section>
+            {/* section 3 */}
             <Section className={ "bg-brand-cyan text-center" }>
                 <h2 className={ "" }>
                     { t('section3.h2') }
                 </h2>
-                <SafeHtmlParagraph className="">
-                    { t('section3.p') }
-                </SafeHtmlParagraph>
+                <Paragraphs>
+                    { t('section3.paragraphs', { returnObjects: true }) }
+                </Paragraphs>
                 <RedButton newTab marginTop href={ '#' }>
                     { t('section3.button') }
                 </RedButton>
             </Section>
+            {/* section 4 */}
             <Section className={ "" }>
                 <h2 className={ "" }>{ t('section4.h2') }</h2>
                 <div className="cols-4-fixed">
@@ -70,6 +88,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
+            {/* section 5 */}
             <Section className={ "bg-brand-orange" }>
                 <h2 className={ "" }>{ t('section5.h2') }</h2>
                 <div className="cols-2-fixed">
@@ -86,6 +105,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
+            {/* section 6 */}
             <Section className={ "" }>
                 <h2 className={ "" }>{ t('section6.h2') }</h2>
                 <div className="cols-3-fixed">

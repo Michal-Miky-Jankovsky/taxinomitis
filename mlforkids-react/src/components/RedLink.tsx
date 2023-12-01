@@ -19,6 +19,10 @@ export const RedLink = (props: RedLinkProps) => {
         ...rest
     } = props;
 
+    if (!children || !to) {
+        return null;
+    }
+
     return <Link
         to={ to }
         className={

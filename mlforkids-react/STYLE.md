@@ -10,22 +10,22 @@ Setup
 ### Color Constants
 `mlforkids-react/tailwind.config.js`
 
-```javascript
+```text
 module.exports = {
   ...
   theme: {
     extend: {
       colors: {
-        'text-primary': '#000006',
-        'brand-cyan': '#74C4BC',
-        'brand-blue': '#22619B',
+        "text-primary": "#000006",
+        "brand-cyan": "#74C4BC",
+        "brand-blue": "#22619B",
         ...
 ```
 
 ### Minimal Common CSS
 `mlforkids-react/src/index.css`
 
-```css
+```text
 h1 {
     @apply text-4xl font-bold py-6;
 } 
@@ -97,3 +97,131 @@ Components
          * `to` - _string_ - router link
          * `newTab` - _boolean_ - whether to open in new tab
          * `marginTop` - _boolean_ - whether to add common margin top
+ * `<Paragraphs/>` - a dynamic list of paragraphs from translation file
+     * list of paragraphs internally using `<SafeHtmlParagraph/>`  
+     * props:
+         * `children` - _string[]_
+
+Templates
+---------
+
+section useful classes:
+* `className={ "bg-brand-orange" }`
+* `className={ "bg-brand-cyan" }`
+* `className={ "text-center" }`
+* `className={ "text-white" }`
+
+header section:
+````tsx
+<Section className={ "bg-brand-orange" }>
+    <h1 className={ "text-white" }>
+        { t("headerSection.h1") }
+    </h1>
+    <div className={ "cols-2-fixed" }>
+        <div>
+            <SafeHtmlParagraph
+                className={ "text-2xl" }>
+                { t("headerSection.pLarge") }
+            </SafeHtmlParagraph>
+            <Paragraphs>
+                { t("headerSection.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+            <RedButton newTab href="#">
+                { t("headerSection.button") }
+            </RedButton>
+        </div>
+        <div className={ "hidden md:block" }>
+            todo svg
+        </div>
+    </div>
+</Section>
+```
+
+simple section:
+````tsx
+<Section className={ "bg-brand-cyan" }>
+    <h2 className={ "text-white" }>
+        { t("section2.h2") }
+    </h2>
+    <Paragraphs>
+        { t("section2.paragraphs", { returnObjects: true }) }
+    </Paragraphs>
+    <RedLink to="#">
+        { t("section2.button") }
+    </RedLink>
+</Section>
+```
+
+
+2 columns fixed:
+````tsx
+<Section className={ "" }>
+    <h2>
+        { t("section2.h2") }
+    </h2>
+    <div className={ "cols-2-fixed" }>
+        <div>
+            todo svg
+            <Paragraphs>
+                { t("section2.col1.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+        <div>
+            todo svg
+            <Paragraphs>
+                { t("section2.col2.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+    </div>
+</Section>
+```
+
+ 3 columns fixed:
+````tsx
+<Section className={ "" }>
+    <h2>
+        { t("section3.h2") }
+    </h2>
+    <div className={ "cols-3-fixed" }>
+        <div>
+            todo svg
+            <Paragraphs>
+                { t("section3.col1.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+        <div>
+            todo svg
+            <Paragraphs>
+                { t("section3.col2.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+        <div>
+            todo svg
+            <Paragraphs>
+                { t("section3.col3.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+    </div>
+</Section>
+```
+
+2 columns even:
+````tsx
+<Section className={ "" }>
+    <h2>
+        { t("section4.h2") }
+    </h2>
+    <div className={ "cols-2-even" }>
+        <div>
+            <Paragraphs>
+                { t("section4.col1.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+        <div>
+            <Paragraphs>
+                { t("section4.col2.paragraphs", { returnObjects: true }) }
+            </Paragraphs>
+        </div>
+    </div>
+</Section>
+```

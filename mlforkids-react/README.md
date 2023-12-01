@@ -48,3 +48,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Style Guide
 
 [STYLE.md](STYLE.md)
+
+## Translation Guide
+
+[TRANSLATION.md](TRANSLATION.md)

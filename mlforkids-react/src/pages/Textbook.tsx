@@ -1,19 +1,28 @@
 import React from "react";
 import Section from "../components/Section";
 import { useTranslation } from "react-i18next";
+import Paragraphs from "../components/Paragraphs";
+import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
 
 const Textbook = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Textbook' });
-
 
     return (
         <div className="page textbook">
             <header>
                 <Section className={ "bg-brand-orange" }>
+                    <h1 className={ "text-white" }>
+                        { t('headerSection.h1') }
+                    </h1>
                     <div className={ "cols-2-fixed" }>
                         <div>
-                            <h1 className={ "text-white" }>{ t('h1') }</h1>
-                            <p className={ "text-2xl" }>{ t('section1.p1') }</p>
+                            <SafeHtmlParagraph
+                                className={ "text-2xl" }>
+                                { t('headerSection.pLarge') }
+                            </SafeHtmlParagraph>
+                            <Paragraphs>
+                                { t('headerSection.paragraphs', { returnObjects: true }) }
+                            </Paragraphs>
                         </div>
                         <div className={ "hidden md:block" }>
                             todo svg
@@ -23,15 +32,9 @@ const Textbook = () => {
             </header>
             <main>
                 <Section className={ "" }>
-                    <p className={ "" }>
-                        { t('section2.p1') }
-                    </p>
-                    <p className={ "" }>
-                        { t('section2.p2') }
-                    </p>
-                    <p className={ "" }>
-                        { t('section2.p3') }
-                    </p>
+                    <Paragraphs>
+                        { t('section2.paragraphs', { returnObjects: true }) }
+                    </Paragraphs>
                 </Section>
             </main>
         </div>

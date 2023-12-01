@@ -15,78 +15,231 @@
     "p3": "Autory české verze jsou: Michal Miky Jankovský, Eva Nečasová a Honza Louda.\nDěkujeme za podporu společnosti IBM Czech!\nKontaktuje nás: <a href=\"https://aidetem.cz\">AI dětem</a>"
   },
   "Home": {
-    "h1": "Nauč (se) umělou inteligenci!",
-    "section1": {
-      "p1": "Strojové učení pro děti je nástroj, díky němuž\nse může každý jednoduše naučit pracovat\ns umělou inteligencí.",
-      "p2": "Nemusíš ani umět programovat! Natrénuj si jednoduše svůj\nmodel strojového učení a vytvoř třeba hru ve Scratchi.",
+    "headerSection": {
+      "h1": "Nauč (se) umělou inteligenci!",
+      "pLarge": "Strojové učení pro děti je nástroj, díky němuž\nse může každý jednoduše naučit pracovat\ns umělou inteligencí.",
+      "paragraphs": [
+        "Nemusíš ani umět programovat! Natrénuj si jednoduše svůj\nmodel strojového učení a vytvoř třeba hru ve Scratchi."
+      ],
       "button": "Jdu na to!"
     },
     "section2": {
       "h2": "Jak se to dělá?",
-      "col1": "Nejprve připrav pro počítač příklady a rozděl je tříd.",
-      "col2": "Natrénuj svůj model — text, čísla, audio nebo obrázky.",
-      "col3": "Využij ho ve Scratchi a vytvoř zábavnou hru pro kamarády."
+      "col1": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Nejprve připrav pro počítač příklady a rozděl je tříd."
+        ]
+      },
+      "col2": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Natrénuj svůj model — text, čísla, audio nebo obrázky."
+        ]
+      },
+      "col3": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Využij ho ve Scratchi a vytvoř zábavnou hru pro kamarády."
+        ]
+      }
     },
     "section3": {
       "h2": "Co to je Strojové učení pro děti",
-      "p": "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít.",
+      "paragraphs": [
+        "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít."
+      ],
       "button": "Jde se na to!"
     },
     "section4": {
       "h2": "Co můžeme umělou inteligenci naučit?",
-      "col1": "Rozpoznávat náladu z textu, být hlasový\nasistent",
-      "col2": "Hrát piškvorky nebo třeba Pacmana",
-      "col3": "Rozpoznávat kresby, fotky, grafiku a podobně",
-      "col4": "Rozpoznávat zvuky, hudbu a další audio"
+      "col1": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Rozpoznávat náladu z textu, být hlasový\nasistent"
+        ]
+      },
+      "col2": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Hrát piškvorky nebo třeba Pacmana"
+        ]
+      },
+      "col3": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Rozpoznávat kresby, fotky, grafiku a podobně"
+        ]
+      },
+      "col4": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Rozpoznávat zvuky, hudbu a další audio"
+        ]
+      }
     },
     "section5": {
       "h2": "Učebnice Strojové učení pro děti",
-      "p": "Projektově založená učebnice umělé inteligence pro děti. Najdete v ní 13 projektů, které jsou popsány krok za krokem. Prohlédněte si ji zde.",
+      "paragraphs": [
+        "Projektově založená učebnice umělé inteligence pro děti. Najdete v ní 13 projektů, které jsou popsány krok za krokem. Prohlédněte si ji zde."
+      ],
       "button": "Objednat",
       "link": "https://obchod.aidetem.cz"
     },
     "section6": {
       "h2": "Projekty",
-      "col1": "Vytvoř aplikaci, která rozpoznává Pokémona",
-      "col2": "Vytvoř pro kamarády apku, která rozpozná jak se cítí",
-      "col3": "Nauč umělou inteligenci hrát Pacmana",
+      "col1": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Vytvoř aplikaci, která rozpoznává Pokémona"
+        ]
+      },
+      "col2": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Vytvoř pro kamarády apku, která rozpozná jak se cítí"
+        ]
+      },
+      "col3": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Nauč umělou inteligenci hrát Pacmana"
+        ]
+      },
       "button": "Další projekty"
     }
   },
   "About": {
     "h1": "Strojové učení pro děti",
-    "section1": {
-      "p1": "Strojové učení pro děti je nástroj, díky němuž se může každý jednoduše naučit pracovat s umělou inteligencí."
+    "headerSection": {
+      "h1": "Strojové učení pro děti",
+      "pLarge": "Strojové učení pro děti je nástroj, díky němuž se může každý jednoduše naučit pracovat s umělou inteligencí.",
+      "paragraphs": [
+        "",
+        ""
+      ],
+      "button": "",
+      "link": ""
     },
     "section2": {
       "h2": "Krátké intro v 20 sekundách/ 20 minutách",
-      "alt1": "Video ukazující práci ve scratchi",
-      "alt2": "Video..."
+      "col1": {
+        "svgAlt": "Video ukazující práci ve scratchi",
+        "paragraphs": [
+          "",
+          ""
+        ]
+      },
+      "col2": {
+        "svgAlt": "Video...",
+        "paragraphs": [
+          "",
+          ""
+        ]
+      }
     },
     "section3": {
       "h2": "Co to je?",
-      "p": "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít.",
-      "button": "Jde se na to!"
+      "paragraphs": [
+        "Je to webový nástroj určený dětem, díky němuž může úplně každý pracovat s umělou inteligencí.\nVytvořil ho pan Dale Lane ze společnosti IBM a může ho zdarma kdokoliv využít.",
+        ""
+      ],
+      "button": "Jde se na to!",
+      "link": ""
     },
     "section4": {
       "h2": "Proč?",
-      "col1": "Rozpoznávat náladu z textu, být hlasový\nasistent",
-      "col2": "Hrát piškvorky nebo třeba Pacmana",
-      "col3": "Rozpoznávat kresby, fotky, grafiku a podobně,"
+      "col1": {
+        "svgAlt": "",
+        "paragraphs": [
+          "Strojové učení je všude kolem nás. Všichni denně používáme systémy strojového učení - například spamové filtry, doporučovací systémy, služby jazykového překladu, chatboty a digitální asistenty, vyhledávače a systémy pro odhalování podvodů.",
+          "Brzy bude běžné, že systémy strojového učení budou řídit naše auta a pomáhat lékařům diagnostikovat a léčit naše nemoci.",
+          "Je důležité, aby si děti uvědomovaly, jak náš svět funguje. Nejlepším způsobem, jak porozumět možnostem a důsledkům, je mít možnost si s touto technologií samy tvořit.",
+          "Chcete-li se dozvědět více, přečtěte si článek: \"Představujeme strojové učení dětem\""
+        ]
+      },
+      "col2": {
+        "svgAlt": "",
+        "paragraphs": [
+          ""
+        ]
+      }
     },
-    "todo": {
-      "WHAT.storiesButton": "EN - Stories"
+    "section5": {
+      "h2": "Další vzdělávání",
+      "paragraphs": [
+        "Strojové učení pro děti je užitečný nástroj, který dětem přiblíží, jak se systémy ML trénují, jak se používají a jaké jsou některé reálné důsledky aplikací umělé inteligence.\n",
+        "Další výukové a vzdělávací zdroje, včetně výuky vnitřních principů systémů ML, naleznete zde:"
+      ],
+      "button": "",
+      "link": ""
+    }
+  },
+  "Models": {
+    "headerSection": {
+      "h1": "Modely",
+      "pLarge": "K těmto projektům jsou ke stažení průvodci krok za krokem s vysvětlivkami a barevnými snímky obrazovek, podle kterých mohou studenti postupovat.",
+      "paragraphs": [
+        "Každý projekt je samostatnou aktivitou, která je napsána na jednu vyučovací hodinu a vede děti k vytvoření hry nebo interaktivního projektu, který demonstruje reálné využití umělé inteligence a strojového učení.",
+        "Vytvoř si vlastní modely strojového učení"
+      ],
+      "button": "Jde na to!",
+      "link": ""
     }
   },
   "Textbook": {
-    "h1": "Machine Learning for Kids",
-    "section1": {
-      "p1": "Úvod do umělé inteligence na základě projektů"
+    "headerSection": {
+      "h1": "Machine Learning for Kids",
+      "pLarge": "Úvod do umělé inteligence na základě projektů"
     },
     "section2": {
-      "p1": "Kniha je praktickým úvodem do toho, jak umělá inteligence ovlivňuje náš život. Obsahuje návody krok za krokem na tvorbu různých projektů využívajících strojové učení v jazyce Scratch a vysvětluje, jak každý z nich souvisí s reálnými aplikacemi umělé inteligence.",
-      "p2": "Několik projektů se hlouběji zabývá konkrétními aspekty aplikace strojového učení, včetně obnovení některých nejčastějších chyb, kterých se v umělé inteligenci dopouštíme, a seznámení se s různými způsoby, jakými lze měřit a popisovat výkonnost systémů strojového učení.",
-      "p3": "V závěru knihy jsou uvedeny příklady neobjektivních systémů strojového učení a diskutovány otázky etiky umělé inteligence, které z nich vyplývají."
+      "paragraphs": [
+        "Kniha je praktickým úvodem do toho, jak umělá inteligence ovlivňuje náš život. Obsahuje návody krok za krokem na tvorbu různých projektů využívajících strojové učení v jazyce Scratch a vysvětluje, jak každý z nich souvisí s reálnými aplikacemi umělé inteligence.",
+        "Několik projektů se hlouběji zabývá konkrétními aspekty aplikace strojového učení, včetně obnovení některých nejčastějších chyb, kterých se v umělé inteligenci dopouštíme, a seznámení se s různými způsoby, jakými lze měřit a popisovat výkonnost systémů strojového učení.",
+        "V závěru knihy jsou uvedeny příklady neobjektivních systémů strojového učení a diskutovány otázky etiky umělé inteligence, které z nich vyplývají."
+      ]
     }
+  },
+  "FAQ": {
+    "headerSection": {
+      "h1": "Chcete se dozvědět více?",
+      "pLarge": "Něco nefunguje?\n\nNíže uvedený seznam obsahuje otázky a problémy, které slýchám nejčastěji. Pokud vidíte něco, co se podobá vašemu problému, klikněte na shrnutí a získáte další informace.\n\nPokud jste se stále zasekli nebo jste narazili na problém, který jsem do seznamu nezahrnul, omlouvám se! <a href='https://groups.google.com/d/forum/mlforkids'>Položte</a> prosím <a href='https://groups.google.com/d/forum/mlforkids'>otázku ve skupině mlforkids na Googlu</a>, abych vám mohl pomoci.",
+      "paragraphs": [
+        ""
+      ]
+    }
+  },
+  "projects": {
+    "h3": "Otázky k projektu",
+    "question": "Které modely strojového učení jsou trénovány na vašem počítači a které v cloudu?",
+    "answers": [
+      "<strong>textové</strong> projekty lze trénovat pouze v cloudu.",
+      "projekty s <strong>čísly</strong> lze školit pouze v cloudu.",
+      "<strong>zvukové</strong> projekty lze trénovat pouze na počítači.",
+      "projekty <strong>obrázků</strong> lze trénovat pouze na počítači."
+    ]
+  },
+  "scratch": {
+    "h3": "Problémy se Scratchem",
+    "question": "Nevím, jak zprovoznit Scratch 2",
+    "answers": [
+      "Starší verze programu Scratch, Scratch 2, potřebuje ke své práci Adobe Flash, takže musíte používat operační systém a webový prohlížeč, který umí pracovat s Flashem.",
+      "Pokud si nejste jisti, jak povolit Flash, můžete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/machinelearningforkids-scratchx.pdf'>si stáhnout dokument s několika tipy pro zprovoznění aplikace Scratch</a>. Nebo můžete místo toho použít novou verzi programu Scratch, Scratch 3.",
+      "Nabídky \"Načíst projekt\" a \"Uložit projekt\" v aplikaci Scratch nefungují",
+      "Pokud používáte Safari v systému macOS a nabídky Scratch \"Soubor -&gt; Načíst projekt\" a \"Soubor -&gt; Uložit projekt\" nefungují, je možné, že pracujete v nouzovém režimu.",
+      "Postup pro kontrolu a opravu naleznete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/safari-scratch-safemode.pdf'>zde</a>.",
+      "Bloky klasifikátoru strojového učení v aplikaci Scratch 2 přestaly fungovat",
+      "Občas se může stát, že bloky Scratch pro váš model strojového učení ztratí spojení se serverem. V takovém případě přestanou vracet výsledky.",
+      "Zda se tak stalo, můžete zkontrolovat pomocí barevné kontrolky stavu v paletě \"Další bloky\".",
+      "Pokud je stavová kontrolka vedle bloků strojového učení Scratch červená, obvykle to znamená, že je něco špatně. Může se jednat o dočasný problém. Zkuste projekt uložit (pomocí \"Soubor\" -&gt; \"Uložit projekt\") a poté obnovte stránku prohlížeče. Pokud se po opětovném načtení stránky stavová kontrolka rozsvítí zeleně, můžete svůj projekt načíst (pomocí 'File' -&gt; 'Load Project') a pokračovat tam, kde jste skončili.",
+      "Pokud je stavová kontrolka po opětovném načtení stránky stále červená, je pravděpodobně něco v nepořádku s modelem strojového učení. Zkuste přejít na stránku \"Učení a testování\" projektu, kde lze nalézt všechna chybová hlášení o vašem modelu.",
+      "Pokud je stavová kontrolka vedle bloků strojového učení Scratch zelená, měly by bloky fungovat. Pokud od nich nedostáváte očekávané odpovědi, zkuste přejít na stránku \"Learn &amp; Test\" a zkontrolovat, jaké výsledky váš model vrací.",
+      "Mohu použít jakoukoli verzi Scratche?",
+      "Musíte používat verze programu Scratch, které poskytuje stránka Machine Learning for Kids. Spustíte je kliknutím na tlačítka Scratch nebo \"Scratch 3\" na stránce projektu.",
+      "Scratch 3 ukládá projekty pouze do složky \"Downloads\"",
+      "Když ve Scratchi 3 kliknete na \"Soubor\" -&gt; \"Uložit do počítače\", projekt Scratch se uloží do počítače.",
+      "Někteří učitelé hlásili problém, že se to ukládalo do složky Stažené soubory na počítači, kde studenti nemají ve Windows přístup do složky Stažené soubory. Výsledkem bylo, že studenti neměli přístup ke svým uloženým projektům.",
+      "Pokud máte tento problém, je třeba v nastavení webového prohlížeče vyhledat nastavení typu \"Před stažením se zeptat, kam uložit každý soubor\". Pokud toto nastavení povolíte, studenti si budou moci vybrat, kam se jejich projekty uloží."
+    ]
   }
 }

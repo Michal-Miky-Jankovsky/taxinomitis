@@ -20,6 +20,10 @@ export const RedButton = (props: RedButtonProps) => {
         ...rest
     } = props;
 
+    if (!children || !href) {
+        return null;
+    }
+
     return <a
         href={ href }
         target={ newTab ? '_blank' : undefined }

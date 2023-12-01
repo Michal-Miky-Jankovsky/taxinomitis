@@ -13,6 +13,10 @@ const SafeHtmlTag = (props: SafeHtmlTagProps) => {
         ...rest
     } = props;
 
+    if (!children) {
+        return null;
+    }
+
     // Sanitize the HTML content
     const sanitizedHtml = DOMPurify.sanitize(children);
 

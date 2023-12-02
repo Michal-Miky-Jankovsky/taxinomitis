@@ -21,7 +21,7 @@ const QuestionAndAnswers = (props: QuestionAndAnswersProps) => {
     return (
         <>
             <div onClick={ toggleOpen } className={"flex items-end flex-auto"}>
-                <h3 className={ "text-xl font-semibold mb-2 grow" }>
+                <h3 className={ "text-xl font-semibold my-2 grow" }>
                     { questionAndAnswers.question }
                 </h3>
                 <div className={ "text-brand-red ml-2 mb-1" }>

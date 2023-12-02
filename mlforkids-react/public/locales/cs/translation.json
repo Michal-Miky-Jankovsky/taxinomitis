@@ -207,39 +207,49 @@
       "paragraphs": [
         ""
       ]
-    }
-  },
-  "projects": {
-    "h3": "Otázky k projektu",
-    "question": "Které modely strojového učení jsou trénovány na vašem počítači a které v cloudu?",
-    "answers": [
-      "<strong>textové</strong> projekty lze trénovat pouze v cloudu.",
-      "projekty s <strong>čísly</strong> lze školit pouze v cloudu.",
-      "<strong>zvukové</strong> projekty lze trénovat pouze na počítači.",
-      "projekty <strong>obrázků</strong> lze trénovat pouze na počítači."
-    ]
-  },
-  "scratch": {
-    "h3": "Problémy se Scratchem",
-    "question": "Nevím, jak zprovoznit Scratch 2",
-    "answers": [
-      "Starší verze programu Scratch, Scratch 2, potřebuje ke své práci Adobe Flash, takže musíte používat operační systém a webový prohlížeč, který umí pracovat s Flashem.",
-      "Pokud si nejste jisti, jak povolit Flash, můžete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/machinelearningforkids-scratchx.pdf'>si stáhnout dokument s několika tipy pro zprovoznění aplikace Scratch</a>. Nebo můžete místo toho použít novou verzi programu Scratch, Scratch 3.",
-      "Nabídky \"Načíst projekt\" a \"Uložit projekt\" v aplikaci Scratch nefungují",
-      "Pokud používáte Safari v systému macOS a nabídky Scratch \"Soubor -&gt; Načíst projekt\" a \"Soubor -&gt; Uložit projekt\" nefungují, je možné, že pracujete v nouzovém režimu.",
-      "Postup pro kontrolu a opravu naleznete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/safari-scratch-safemode.pdf'>zde</a>.",
-      "Bloky klasifikátoru strojového učení v aplikaci Scratch 2 přestaly fungovat",
-      "Občas se může stát, že bloky Scratch pro váš model strojového učení ztratí spojení se serverem. V takovém případě přestanou vracet výsledky.",
-      "Zda se tak stalo, můžete zkontrolovat pomocí barevné kontrolky stavu v paletě \"Další bloky\".",
-      "Pokud je stavová kontrolka vedle bloků strojového učení Scratch červená, obvykle to znamená, že je něco špatně. Může se jednat o dočasný problém. Zkuste projekt uložit (pomocí \"Soubor\" -&gt; \"Uložit projekt\") a poté obnovte stránku prohlížeče. Pokud se po opětovném načtení stránky stavová kontrolka rozsvítí zeleně, můžete svůj projekt načíst (pomocí 'File' -&gt; 'Load Project') a pokračovat tam, kde jste skončili.",
-      "Pokud je stavová kontrolka po opětovném načtení stránky stále červená, je pravděpodobně něco v nepořádku s modelem strojového učení. Zkuste přejít na stránku \"Učení a testování\" projektu, kde lze nalézt všechna chybová hlášení o vašem modelu.",
-      "Pokud je stavová kontrolka vedle bloků strojového učení Scratch zelená, měly by bloky fungovat. Pokud od nich nedostáváte očekávané odpovědi, zkuste přejít na stránku \"Learn &amp; Test\" a zkontrolovat, jaké výsledky váš model vrací.",
-      "Mohu použít jakoukoli verzi Scratche?",
-      "Musíte používat verze programu Scratch, které poskytuje stránka Machine Learning for Kids. Spustíte je kliknutím na tlačítka Scratch nebo \"Scratch 3\" na stránce projektu.",
-      "Scratch 3 ukládá projekty pouze do složky \"Downloads\"",
-      "Když ve Scratchi 3 kliknete na \"Soubor\" -&gt; \"Uložit do počítače\", projekt Scratch se uloží do počítače.",
-      "Někteří učitelé hlásili problém, že se to ukládalo do složky Stažené soubory na počítači, kde studenti nemají ve Windows přístup do složky Stažené soubory. Výsledkem bylo, že studenti neměli přístup ke svým uloženým projektům.",
-      "Pokud máte tento problém, je třeba v nastavení webového prohlížeče vyhledat nastavení typu \"Před stažením se zeptat, kam uložit každý soubor\". Pokud toto nastavení povolíte, studenti si budou moci vybrat, kam se jejich projekty uloží."
+    },
+    "topics": [
+      {
+        "h2": "Otázky k projektu",
+        "questionsAndAnswers": [
+          {
+            "question": "Které modely strojového učení jsou trénovány na vašem počítači a které v cloudu?",
+            "answers": [
+              "<strong>textové</strong> projekty lze trénovat pouze v cloudu.",
+              "projekty s <strong>čísly</strong> lze školit pouze v cloudu.",
+              "<strong>zvukové</strong> projekty lze trénovat pouze na počítači.",
+              "projekty <strong>obrázků</strong> lze trénovat pouze na počítači."
+            ]
+          }
+        ]
+      },
+      {
+        "h2": "Problémy se Scratchem",
+        "questionsAndAnswers": [
+          {
+            "question": "Nevím, jak zprovoznit Scratch 2",
+            "answers": [
+              "Starší verze programu Scratch, Scratch 2, potřebuje ke své práci Adobe Flash, takže musíte používat operační systém a webový prohlížeč, který umí pracovat s Flashem.",
+              "Pokud si nejste jisti, jak povolit Flash, můžete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/machinelearningforkids-scratchx.pdf'>si stáhnout dokument s několika tipy pro zprovoznění aplikace Scratch</a>. Nebo můžete místo toho použít novou verzi programu Scratch, Scratch 3.",
+              "Nabídky \"Načíst projekt\" a \"Uložit projekt\" v aplikaci Scratch nefungují",
+              "Pokud používáte Safari v systému macOS a nabídky Scratch \"Soubor -&gt; Načíst projekt\" a \"Soubor -&gt; Uložit projekt\" nefungují, je možné, že pracujete v nouzovém režimu.",
+              "Postup pro kontrolu a opravu naleznete <a href='https://github.com/IBM/taxinomitis-docs/raw/master/docs/pdf/safari-scratch-safemode.pdf'>zde</a>.",
+              "Bloky klasifikátoru strojového učení v aplikaci Scratch 2 přestaly fungovat",
+              "Občas se může stát, že bloky Scratch pro váš model strojového učení ztratí spojení se serverem. V takovém případě přestanou vracet výsledky.",
+              "Zda se tak stalo, můžete zkontrolovat pomocí barevné kontrolky stavu v paletě \"Další bloky\".",
+              "Pokud je stavová kontrolka vedle bloků strojového učení Scratch červená, obvykle to znamená, že je něco špatně. Může se jednat o dočasný problém. Zkuste projekt uložit (pomocí \"Soubor\" -&gt; \"Uložit projekt\") a poté obnovte stránku prohlížeče. Pokud se po opětovném načtení stránky stavová kontrolka rozsvítí zeleně, můžete svůj projekt načíst (pomocí 'File' -&gt; 'Load Project') a pokračovat tam, kde jste skončili.",
+              "Pokud je stavová kontrolka po opětovném načtení stránky stále červená, je pravděpodobně něco v nepořádku s modelem strojového učení. Zkuste přejít na stránku \"Učení a testování\" projektu, kde lze nalézt všechna chybová hlášení o vašem modelu.",
+              "Pokud je stavová kontrolka vedle bloků strojového učení Scratch zelená, měly by bloky fungovat. Pokud od nich nedostáváte očekávané odpovědi, zkuste přejít na stránku \"Learn &amp; Test\" a zkontrolovat, jaké výsledky váš model vrací.",
+              "Mohu použít jakoukoli verzi Scratche?",
+              "Musíte používat verze programu Scratch, které poskytuje stránka Machine Learning for Kids. Spustíte je kliknutím na tlačítka Scratch nebo \"Scratch 3\" na stránce projektu.",
+              "Scratch 3 ukládá projekty pouze do složky \"Downloads\"",
+              "Když ve Scratchi 3 kliknete na \"Soubor\" -&gt; \"Uložit do počítače\", projekt Scratch se uloží do počítače.",
+              "Někteří učitelé hlásili problém, že se to ukládalo do složky Stažené soubory na počítači, kde studenti nemají ve Windows přístup do složky Stažené soubory. Výsledkem bylo, že studenti neměli přístup ke svým uloženým projektům.",
+              "Pokud máte tento problém, je třeba v nastavení webového prohlížeče vyhledat nastavení typu \"Před stažením se zeptat, kam uložit každý soubor\". Pokud toto nastavení povolíte, studenti si budou moci vybrat, kam se jejich projekty uloží."
+            ]
+          }
+        ]
+      }
     ]
   }
 }

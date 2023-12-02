@@ -1,57 +1,62 @@
 import { useTranslation } from "react-i18next";
 import Section from "../components/Section";
 import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
+import React from "react";
+import Paragraphs from "../components/Paragraphs";
+import { RedButton } from "../components/RedButton";
+import QuestionsAndAnswers from "../components/QuestionsAndAnswers";
+
+type FAQTopic = {
+    h2: string;
+    questionsAndAnswers: {
+        question: string;
+        answers: string[];
+    }[];
+};
 
 const FAQ = () => {
-    const { t } = useTranslation('translation', { keyPrefix: 'Models' });
-    const { t: tPrev } = useTranslation('prev', { keyPrefix: 'HELP' });
+    const { t } = useTranslation('translation', { keyPrefix: 'FAQ' });
+
+    const topics: FAQTopic[] = t('topics', { returnObjects: true });
 
     return (
         <div className="page models">
             <header>
                 <Section className={ "bg-brand-orange" }>
-                    <h1 className={ "text-white" }>{ tPrev('FAQS.TITLE') }</h1>
-                    <p className={ "text-2xl" }>{ tPrev('FAQS.INTRO1') }</p>
-                    <p className={ "text-2xl" }>{ tPrev('FAQS.INTRO2') }</p>
-                    <SafeHtmlParagraph className={ "text-2xl" }>{ tPrev('FAQS.INTRO3') }</SafeHtmlParagraph>
+                    <h1 className={ "text-white" }>
+                        { t("headerSection.h1") }
+                    </h1>
+                    <div className={ "cols-2-fixed" }>
+                        <div>
+                            <SafeHtmlParagraph
+                                className={ "text-2xl" }>
+                                { t("headerSection.pLarge") }
+                            </SafeHtmlParagraph>
+                            <Paragraphs>
+                                { t("headerSection.paragraphs", { returnObjects: true }) }
+                            </Paragraphs>
+                            <RedButton newTab href="#">
+                                { t("headerSection.button", { defaultValue: "" }) }
+                            </RedButton>
+                        </div>
+                        <div className={ "hidden md:block" }>
+                            todo svg
+                        </div>
+                    </div>
                 </Section>
             </header>
             <main>
                 <Section className={ "" }>
-                    <h2 className={ "text-brand-white bg-brand-cyan inline-block pl-4 pr-20 py-2 rounded-xl" }>
-                        { tPrev('PROJECTS.TITLE') }
-                    </h2>
-
-                    <div id="accordion-collapse" data-accordion="collapse">
-                        <h2 id="accordion-collapse-heading-1">
-                            <button type="button" className="" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                                <p className={ "text-2xl" }>
-                                    { tPrev('PROJECTS.Q4') }
-                                </p>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
-                            <SafeHtmlParagraph className={ "" }>
-                                { tPrev('PROJECTS.Q4-A-1') }
-                            </SafeHtmlParagraph>
-                            <SafeHtmlParagraph className={ "" }>
-                                { tPrev('PROJECTS.Q4-A-2') }
-                            </SafeHtmlParagraph>
-                            <SafeHtmlParagraph className={ "" }>
-                                { tPrev('PROJECTS.Q4-A-3') }
-                            </SafeHtmlParagraph>
-                            <SafeHtmlParagraph className={ "" }>
-                                { tPrev('PROJECTS.Q4-A-4') }
-                            </SafeHtmlParagraph>
+                    { Array.isArray(topics) && topics.map((topic: any, index: number) => (
+                        <div key={ index } className={ "topic" }>
+                            <h2 className={ "text-brand-white bg-brand-cyan inline-block pl-4 pr-20 py-2 rounded-xl my-4" }>
+                                { topic.h2 }
+                            </h2>
+                            <QuestionsAndAnswers>
+                                { topic.questionsAndAnswers }
+                            </QuestionsAndAnswers>
                         </div>
-                    </div>
-
-
-
-
-                    <h2 className={ "text-brand-white bg-brand-cyan inline-block pl-4 pr-20 py-2 rounded-xl" }>{ tPrev('SCRATCH.TITLE') }</h2>
-                    <p className={ "" }>{ tPrev('A1') }</p>
-
+                    )) }
 
                 </Section>
             </main>

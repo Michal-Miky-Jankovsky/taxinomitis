@@ -40,7 +40,6 @@ module.exports = {
     },
     plugins: [],
     safelist: [
-        'brand-white',
-        'text-brand-white'
+        'overflow-hidden',
     ],
 }

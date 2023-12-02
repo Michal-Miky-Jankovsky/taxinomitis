@@ -14,7 +14,7 @@ const Section = (props: SectionProps) => {
 
     return (
         <section className={`Section px-8 ${className}`} { ...rest }>
-            <div className="wrapper max-w-6xl mx-auto py-12" >
+            <div className="section-wrapper max-w-6xl mx-auto py-12" >
                 { children }
             </div>
         </section>

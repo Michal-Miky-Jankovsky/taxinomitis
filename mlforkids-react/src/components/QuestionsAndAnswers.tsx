@@ -1,4 +1,4 @@
-import SafeHtmlParagraph from "./SafeHtmlParagraph";
+import QuestionAndAnswers from "./QuestionAndAnswers";
 
 interface QuestionsAndAnswersProps {
     children: {
@@ -19,17 +19,8 @@ const QuestionsAndAnswers = (props: QuestionsAndAnswersProps) => {
             { questionsAndAnswers.map(
                 (questionAndAnswers, index) =>
                     (
-                        <div key={ index } className={ "QuestionAndAnswer" }>
-                            <h3 className={ "text-xl font-semibold mb-2" }>
-                                { questionAndAnswers.question }
-                            </h3>
-                            { questionAndAnswers.answers.map(
-                                (answer, index) => (
-                                    <SafeHtmlParagraph key={ index }>
-                                        { answer }
-                                    </SafeHtmlParagraph>
-                                )
-                            ) }
+                        <div key={ index } className={ "QuestionAndAnswer border-b border-brand-red" }>
+                            <QuestionAndAnswers questionAndAnswers={questionAndAnswers } />
                         </div>
                     )
             ) }

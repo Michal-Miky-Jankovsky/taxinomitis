@@ -185,7 +185,31 @@
       ],
       "button": "Jde na to!",
       "link": ""
-    }
+    },
+    "type": "Typ Projektu",
+    "typeValues": {
+      "all": "vše",
+      "text": "text",
+      "images": "obrázky",
+      "numbers": "čísla",
+      "sounds": "zvuky",
+      "faces": "tváře"
+    },
+    "difficulty": "Obtížnost",
+    "difficultyValues": {
+      "all": "vše",
+      "easy": "Snadné",
+      "medium": "Střední",
+      "hard": "Těžké"
+    },
+    "makeType": "Typ programu",
+    "makeTypeValues": {
+      "all": "Všechny",
+      "scratch3": "Scratch projects",
+      "python": "Python projects",
+      "appInventor": "App Inventor projects"
+    },
+    "noResults": "Pro zadané parametry nebyly nalezeny žádné výsledky"
   },
   "Textbook": {
     "headerSection": {

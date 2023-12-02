@@ -32,7 +32,7 @@ export const RedLink = (props: RedLinkProps) => {
             // styles
             'inline-block ' +
             'py-2 px-6 ' +
-            'text-xl font-semibold ' +
+            'text-xl font-bold ' +
             'text-brand-white bg-brand-red ' +
             'hover:bg-brand-red-hover ' +
             'rounded-full ' +

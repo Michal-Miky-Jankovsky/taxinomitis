@@ -1065,7 +1065,7 @@
             "CONTRIBUTE": "Pokud ano, zvažte prosím, zda <a href='https://github.com/IBM/taxinomitis-docs/blob/master/README.md#contributions'>ji poskytnete ostatním k použití</a>."
         },
         "DESCRIBETHEGLASS": {
-            "TITLE": "Popište sklo",
+            "TITLE": "Popis sklenice",
             "SUMMARY": "Naučte počítač předvídat vaše odpovědi",
             "DESCRIPTION": "Vytvořte ve Scratchi hru, která se učí, když popíšete sklenici jako poloplnou nebo poloprázdnou.",
             "TEACHERSNOTES_URL": "https://github.com/IBM/taxinomitis-docs/raw/master/teachers-notes/pdf/teachersnotes-describetheglass.pdf",

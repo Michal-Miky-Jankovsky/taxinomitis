@@ -3,6 +3,7 @@ module.exports = {
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
         // Add any other paths here. For example, if you have HTML files:
+        './node_modules/@material-tailwind/react/**/*.js',
         "./public/**/*.html",
     ],
     theme: {
@@ -40,6 +41,5 @@ module.exports = {
     },
     plugins: [],
     safelist: [
-        'overflow-hidden',
     ],
 }

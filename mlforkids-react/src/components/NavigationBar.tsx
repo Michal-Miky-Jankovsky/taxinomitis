@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import Logo from "./svg/Logo";
 import { RedButton } from "./RedButton";
+import { RedLink } from "./RedLink";
 
 const NavigationBar = () => {
     const [ isMobileMenuOpen, setIsMobileMenuOpen ] = useState(false);
@@ -65,12 +66,11 @@ const NavigationBar = () => {
                     </NavLink>
                 </li>
                 <li className={ "p-2" }>
-                    <RedButton
-                        newTab
-                        href="https://scratch.machinelearningforkids.co.uk"
+                    <RedLink
+                        to="/create-project"
                     >
                         { t('letsStart') }
-                    </RedButton>
+                    </RedLink>
                 </li>
             </ul>
         </nav>

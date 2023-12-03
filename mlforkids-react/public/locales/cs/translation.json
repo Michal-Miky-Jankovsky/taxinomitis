@@ -209,7 +209,8 @@
       "python": "Python projects",
       "appInventor": "App Inventor projects"
     },
-    "noResults": "Pro zadané parametry nebyly nalezeny žádné výsledky"
+    "noResults": "Pro zadané parametry nebyly nalezeny žádné výsledky",
+    "download": "Stáhnout"
   },
   "Textbook": {
     "headerSection": {

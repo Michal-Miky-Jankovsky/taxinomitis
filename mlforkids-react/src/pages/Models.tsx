@@ -6,6 +6,7 @@ import Paragraphs from "../components/Paragraphs";
 import { RedButton } from "../components/RedButton";
 import { Select, Option } from "@material-tailwind/react";
 import { worksheets } from "../data/worksheets";
+import { CyanButton } from "../components/CyanButton";
 
 const Models = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Models' });
@@ -26,8 +27,8 @@ const Models = () => {
             });
         };
 
-    const allWorksheets = worksheets;
-    const filteredWorksheets = worksheets
+    const allWorksheets = worksheets.map((worksheet, index) => ({index, ...worksheet}));
+    const filteredWorksheets = allWorksheets
         .filter((worksheet) => {
             if (state.type === 'all') {
                 return true;
@@ -139,8 +140,13 @@ const Models = () => {
                                             <div className={ "mb-4" }>
                                                 { tPrev(worksheet.description) }
                                             </div>
-                                            <img src={ worksheet.image.replace('static/images', 'images/projects') }
-                                                 alt={ worksheet.title }/>
+                                            <CyanButton className={"block text-center mb-4"} href={"#"}>{t("download")}</CyanButton>
+
+                                            <div className="grid place-items-center">
+                                                <img
+                                                    src={ worksheet.image.replace('static/images', 'images/projects') }
+                                                    alt={ worksheet.title }/>
+                                            </div>
                                         </div>
                                         <div className={ "card-footer" }>
                                         </div>

@@ -26,6 +26,7 @@ module.exports = {
 
                 // design colors
                 'brand-cyan': '#74C4BC',
+                'brand-cyan-hover': '#5FADA5',
                 'brand-blue': '#22619B',
                 'brand-red': '#CE5D5B',
                 'brand-red-hover': '#B44C4A',

@@ -2,31 +2,27 @@ import React from "react";
 
 interface CyanButtonProps {
     children: React.ReactNode | string;
-    href: string;
-    newTab?: boolean;
+    onClick: () => void;
     marginTop?: boolean;
     className?: string;
-    target?: string;
     rel?: string;
 }
 
 export const CyanButton = (props: CyanButtonProps) => {
     const {
         children,
-        href,
-        newTab = false,
+        onClick,
         marginTop = false,
         className = '',
         ...rest
     } = props;
 
-    if (!children || !href) {
+    if (!children || !onClick) {
         return null;
     }
 
-    return <a
-        href={ href }
-        target={ newTab ? '_blank' : undefined }
+    return <button
+        onClick={ onClick }
         className={
             "CyanButton " +
             // reset default <a> styles
@@ -46,5 +42,5 @@ export const CyanButton = (props: CyanButtonProps) => {
         { ...rest }
     >
         { children }
-    </a>;
+    </button>;
 }

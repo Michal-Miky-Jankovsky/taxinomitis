@@ -1,5 +1,27 @@
 const translations = (key: string) => key;
 
+export type Worksheet = {
+    title: string;
+    summary: string;
+    description: string;
+    difficulty: string;
+    type: string;
+    maketypes: string[];
+    image: string;
+    tags: string[];
+    teachersnotes?: string;
+    downloads: {
+        description?: string;
+        worksheet: string;
+        resources?: string; // seems obsolete
+    }[];
+    providedby?: { // seems obsolete
+        name: string;
+        url: string;
+        embed: string;
+    };
+};
+
 export const worksheets = [
     {
         title: translations('WORKSHEETS.DESCRIBETHEGLASS.TITLE'),

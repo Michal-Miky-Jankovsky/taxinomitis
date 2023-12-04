@@ -210,7 +210,10 @@
       "appInventor": "App Inventor projects"
     },
     "noResults": "Pro zadané parametry nebyly nalezeny žádné výsledky",
-    "download": "Stáhnout"
+    "download": "Stáhnout",
+    "teachersNotes": "Poznámky pro učitele",
+    "tags": "Štítky",
+    "close": "Zavřít"
   },
   "Textbook": {
     "headerSection": {

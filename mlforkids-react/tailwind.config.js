@@ -32,6 +32,10 @@ module.exports = {
                 'brand-red-hover': '#B44C4A',
                 'brand-orange': '#E8BE5B',
                 'brand-white': '#FFFFFF',
+                'brand-gray-1': '#666B68',
+                'brand-gray-1-hover': '#5C605D',
+                'brand-gray-2': '#D4D5CF',
+                'brand-gray-2-hover': '#BEBFB9',
 
                 'footer-bg-gray': '#EAEAE5',
             },

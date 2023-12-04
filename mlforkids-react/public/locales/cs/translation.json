@@ -175,6 +175,44 @@
       "link": ""
     }
   },
+  "CreateProject": {
+    "headerSection": {
+      "1": {
+        "h1": "Vytvoř si vlastní projekt strojového učení"
+      },
+      "2": {
+        "h1": "Natrénuj si svůj model strojového učení"
+      },
+      "3": {
+        "h1": "Testuj jestli má tvůj robot dost informací"
+      },
+      "4": {
+        "h1": "Vyrobte něco s vaším modelem strojového učení"
+      }
+    },
+    "steps": {
+      "1": {
+        "prevButton": "",
+        "nextButton": "Trénovat model >",
+        "progressLine": "1. Zvol si projekt"
+      },
+      "2": {
+        "prevButton": "< Zpět",
+        "nextButton": "Pokračuj na testování >",
+        "progressLine": "2. Trénuj model"
+      },
+      "3": {
+        "prevButton": "< Víc trénovat",
+        "nextButton": "Vytvoř hru >",
+        "progressLine": "3.Uč a testuj"
+      },
+      "4": {
+        "prevButton": "< Zpět",
+        "nextButton": "",
+        "progressLine": "4. Vytvoř hru"
+      }
+    }
+  },
   "Models": {
     "headerSection": {
       "h1": "Modely",
@@ -213,7 +251,9 @@
     "download": "Stáhnout",
     "teachersNotes": "Poznámky pro učitele",
     "tags": "Štítky",
-    "close": "Zavřít"
+    "close": "Zavřít",
+    "subNav": {
+    }
   },
   "Textbook": {
     "headerSection": {

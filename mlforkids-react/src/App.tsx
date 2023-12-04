@@ -13,7 +13,6 @@ import Textbook from './pages/Textbook';
 import FAQ from './pages/FAQ';
 import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationBar";
-import CreateProjectStep from "./pages/CreateProjectStep";
 
 const App = () => {
     return (
@@ -23,7 +22,7 @@ const App = () => {
                 <Route path="/" element={ <Home/> }/>
                 <Route path="/about" element={ <About/> }/>
                 <Route path="/create-project" element={ <CreateProject/> }>
-                    <Route path=":createProjectStep" element={ <CreateProjectStep/> }/>
+                    <Route path=":createProjectStep" />
                     <Route index element={ <Navigate to="1" replace/> }/>
                 </Route>
                 <Route path="/models" element={ <Models/> }/>

@@ -1,26 +1,34 @@
-import React, { useEffect } from "react";
-import { Outlet, useNavigate, useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Section from "../components/Section";
 import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
 import Paragraphs from "../components/Paragraphs";
 import { useTranslation } from "react-i18next";
+import { PrevNextButtons } from "../components/CreateProject/PrevNextButtons";
+import { StepsProgress } from "../components/CreateProject/StepsProgress";
+import { Step1 } from "../components/CreateProject/Step1";
+import { Step2 } from "../components/CreateProject/Step2";
+import { Step3 } from "../components/CreateProject/Step3";
+import { Step4 } from "../components/CreateProject/Step4";
 
 const CreateProject = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'CreateProject' });
 
+    // steps route handling
     const navigate = useNavigate();
     const { createProjectStep } = useParams<{ createProjectStep: string | undefined }>();
     const actualStepNumber = createProjectStep ? parseInt(createProjectStep, 10) : 1; // Default to 1 if a step is undefined
-
     useEffect(() => {
         if (isNaN(actualStepNumber) || actualStepNumber < 1 || actualStepNumber > 4) {
             navigate('/create-project/1', { replace: true });
         }
     }, [ actualStepNumber, navigate ]); // Depend on stepNumber and navigate
-
     const goToStep = (newStep: number) => {
         navigate(`/create-project/${ newStep }`);
     };
+
+    // state
+    // const [ projectState, setProjectState ] = useState({ title: "", type: null });
 
     return (
         <div>
@@ -42,74 +50,32 @@ const CreateProject = () => {
                         </Paragraphs>
                     </div>
                 </Section>
-
-
             </header>
+
             <main>
                 <Section className={ "" }>
-                    <Outlet/>
+                    { (actualStepNumber === 1) && (
+                        <Step1/>
+                    ) }
+                    { (actualStepNumber === 2) && (
+                        <Step2/>
+                    ) }
+                    { (actualStepNumber === 3) && (
+                        <Step3/>
+                    ) }
+                    { (actualStepNumber === 4) && (
+                        <Step4/>
+                    ) }
                 </Section>
-
-
             </main>
 
             <Section className={ "" }>
-                <div className="sub-nav flex justify-between items-center">
-                    { (actualStepNumber <= 1) ? (<div></div>) : (
-                        <button
-                            className="bg-brand-gray-2 text-brand-gray-1 font-semibold py-2 px-4 rounded-lg hover:bg-brand-gray-2-hover"
-                            onClick={ () => goToStep(Math.max(1, actualStepNumber - 1)) }
-                        >
-                            { t(`steps.${ actualStepNumber }.prevButton`) }
-                        </button>
-                    ) }
-
-                    { (actualStepNumber >= 4) ? (<div></div>) : (
-                        <button
-                            className="bg-brand-red text-brand-white font-semibold py-2 px-4 rounded-lg hover:bg-brand-red-hover"
-                            onClick={ () => goToStep(Math.min(4, actualStepNumber + 1)) }
-                        >
-                            { t(`steps.${ actualStepNumber }.nextButton`) }
-                        </button>
-                    ) }
-                </div>
-                <hr className={ "mt-2 mb-1" }/>
-                <div className={ "steps-progress flex justify-between items-center font-bold" }>
-                    {
-                        [ 1, 2, 3, 4 ].map((stepNumber) => (
-                            <CreateProjectStep
-                                key={ stepNumber }
-                                stepNumber={ stepNumber }
-                                actualStepNumber={ actualStepNumber }
-                                label={ t(`steps.${ stepNumber }.progressLine`) }
-                                goToStep={ goToStep }
-                            />
-                        ))
-                    }
-                </div>
+                <PrevNextButtons actualStepNumber={ actualStepNumber } goToStep={ goToStep }/>
+                <StepsProgress actualStepNumber={ actualStepNumber } goToStep={ goToStep }/>
             </Section>
         </div>
     );
 };
 
-const CreateProjectStep = (
-    { stepNumber, actualStepNumber, label, goToStep }:
-        { stepNumber: number, actualStepNumber: number, label: string, goToStep: (newStep: number) => void }
-) => {
-    if (actualStepNumber === stepNumber) {
-        return (
-            <div className={ `active text-brand-cyan` }>
-                { label }
-            </div>
-        );
-    }
-
-    return (
-        <button className={ `step-text text-brand-gray-2` } onClick={() => goToStep(stepNumber)}>
-            { label }
-        </button>
-    );
-
-}
 
 export default CreateProject;

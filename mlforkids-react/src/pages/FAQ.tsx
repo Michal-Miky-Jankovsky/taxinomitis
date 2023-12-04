@@ -4,7 +4,7 @@ import SafeHtmlParagraph from "../components/SafeHtmlParagraph";
 import React from "react";
 import Paragraphs from "../components/Paragraphs";
 import { RedButton } from "../components/RedButton";
-import QuestionsAndAnswers from "../components/QuestionsAndAnswers";
+import QuestionsAndAnswers from "../components/FAQ/QuestionsAndAnswers";
 
 type FAQTopic = {
     h2: string;
@@ -47,7 +47,9 @@ const FAQ = () => {
             </header>
             <main>
                 <Section className={ "" }>
-                    { Array.isArray(topics) && topics.map((topic: any, index: number) => (
+                    {
+                        // todo type any
+                        Array.isArray(topics) && topics.map((topic: any, index: number) => (
                         <div key={ index } className={ "topic" }>
                             <h2 className={ "text-brand-white bg-brand-cyan inline-block pl-4 pr-20 py-2 rounded-xl my-4" }>
                                 { topic.h2 }

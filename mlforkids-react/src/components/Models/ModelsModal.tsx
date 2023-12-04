@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Worksheet } from "../data/worksheets";
+import { Worksheet } from "../../data/worksheets";
 
 interface ModelsModalProps {
     worksheet: Worksheet | null;

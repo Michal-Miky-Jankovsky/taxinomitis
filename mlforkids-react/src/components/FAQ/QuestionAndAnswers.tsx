@@ -1,4 +1,4 @@
-import SafeHtmlParagraph from "./SafeHtmlParagraph";
+import SafeHtmlParagraph from "../SafeHtmlParagraph";
 import React from "react";
 import { Collapse } from "@material-tailwind/react";
 

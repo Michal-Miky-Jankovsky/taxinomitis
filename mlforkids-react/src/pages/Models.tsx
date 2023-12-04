@@ -7,7 +7,7 @@ import { RedButton } from "../components/RedButton";
 import { Select, Option } from "@material-tailwind/react";
 import { Worksheet, worksheets } from "../data/worksheets";
 import { CyanButton } from "../components/CyanButton";
-import { ModelsModal } from "../components/ModelsModal";
+import { ModelsModal } from "../components/Models/ModelsModal";
 
 const Models = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Models' });

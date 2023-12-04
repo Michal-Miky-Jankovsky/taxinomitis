@@ -192,6 +192,16 @@
     },
     "steps": {
       "1": {
+        "projectNameLabel": "Název projektu",
+        "projectTypes": {
+          "label": "Typ projektu",
+          "options": {
+            "text": "Text",
+            "images": "Obrázky",
+            "numbers": "Čísla",
+            "sounds": "Zvuky"
+          }
+        },
         "prevButton": "",
         "nextButton": "Trénovat model >",
         "progressLine": "1. Zvol si projekt"

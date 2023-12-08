@@ -75,16 +75,24 @@ const Home = () => {
                 <h2 className={ "" }>{ t('section4.h2') }</h2>
                 <div className="cols-4-fixed">
                     <div className="">
-                        <p className="">{ t('section4.col1') }</p>
+                        <Paragraphs>
+                            { t('section4.col1.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
-                        <p className="">{ t('section4.col2') }</p>
+                        <Paragraphs>
+                            { t('section4.col2.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
-                        <p className="">{ t('section4.col3') }</p>
+                        <Paragraphs>
+                            { t('section4.col3.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
-                        <p className="">{ t('section4.col4') }</p>
+                        <Paragraphs>
+                            { t('section4.col4.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                 </div>
             </Section>
@@ -110,13 +118,19 @@ const Home = () => {
                 <h2 className={ "" }>{ t('section6.h2') }</h2>
                 <div className="cols-3-fixed">
                     <div className="">
-                        <p className="">{ t('section6.col1') }</p>
+                        <Paragraphs>
+                            { t('section6.col1.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
-                        <p className="">{ t('section6.col3') }</p>
+                        <Paragraphs>
+                            { t('section6.col2.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                     <div className="">
-                        <p className="">{ t('section6.col3') }</p>
+                        <Paragraphs>
+                            { t('section6.col3.paragraphs', { returnObjects: true }) }
+                        </Paragraphs>
                     </div>
                 </div>
             </Section>

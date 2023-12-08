@@ -9,6 +9,15 @@ const Footer = () => {
     const { t } = useTranslation('translation', { keyPrefix: 'Footer' });
     const { t: tNav } = useTranslation('translation', { keyPrefix: 'NavigationBar' });
 
+    const footerLinks = [
+        { link: "/", label: tNav('home'), },
+        { link: "/about", label: tNav('about'), },
+        { link: "/create-project", label: tNav('createProject'), },
+        { link: "/models", label: tNav('models'), },
+        { link: "/textbook", label: tNav('textbook'), },
+        { link: "/faq", label: tNav('faq'), },
+    ];
+
     return (
         <footer id="Footer" className="text-gray-600 bg-gray-100 px-4 py-6">
             <div className="wrapper p-12">
@@ -25,29 +34,16 @@ const Footer = () => {
                 <div className="cols-3-fixed">
                     <SafeHtmlParagraph>{ t('p1') }</SafeHtmlParagraph>
                     <p>
-                        <Link to="/">
-                            { tNav('home') }
-                        </Link>
-                        <br/>
-                        <Link to="/about">
-                            { tNav('about') }
-                        </Link>
-                        <br/>
-                        <Link to="/create-project">
-                            { tNav('createProject') }
-                        </Link>
-                        <br/>
-                        <Link to="/models">
-                            { tNav('models') }
-                        </Link>
-                        <br/>
-                        <Link to="/textbook">
-                            { tNav('textbook') }
-                        </Link>
-                        <br/>
-                        <Link to="/faq">
-                            { tNav('faq') }
-                        </Link>
+                        {
+                            footerLinks
+                                .map(({ link, label }: { link: string, label: string }, index) => (
+                                    <div key={ index }>
+                                        <Link to={ link } className={ "no-underline hover:underline" }>
+                                            { label }
+                                        </Link>
+                                    </div>
+                                ))
+                        }
                     </p>
                     <SafeHtmlParagraph>{ t('p3') }</SafeHtmlParagraph>
                 </div>

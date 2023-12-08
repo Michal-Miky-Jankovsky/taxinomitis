@@ -7,6 +7,10 @@ In implementation side of view, how to write the "tsx" (html) code.
 Setup
 -----
 
+### Fonts
+todo remove unnecessary variants
+https://fonts.google.com/share?selection.family=Quicksand:wght@300;400;500;600;700|Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700
+
 ### Color Constants
 `mlforkids-react/tailwind.config.js`
 

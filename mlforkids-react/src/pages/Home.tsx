@@ -98,17 +98,19 @@ const Home = () => {
             </Section>
             {/* section 5 */}
             <Section className={ "bg-brand-orange" }>
-                <h2 className={ "" }>{ t('section5.h2') }</h2>
-                <div className="cols-2-fixed">
-                    <div className="">
-                        <SafeHtmlParagraph className={ "" }>
-                            { t('section5.p') }
-                        </SafeHtmlParagraph>
-                        <RedButton newTab marginTop href={ t('section5.link') }>
+                <h2>
+                    { t("section5.h2") }
+                </h2>
+                <div className={ "cols-2-fixed" }>
+                    <div>
+                        <Paragraphs>
+                            { t("section5.paragraphs", { returnObjects: true }) }
+                        </Paragraphs>
+                        <RedButton newTab href={t("section5.link")}>
                             { t('section5.button') }
                         </RedButton>
                     </div>
-                    <div className="">
+                    <div>
                         todo svg
                     </div>
                 </div>
